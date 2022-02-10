@@ -346,12 +346,14 @@
             <div class="modal">
                
                 <button class="button-modal " data-modal-open>
-                </button>
-                <form action="" class="js-speaker-form">
+                          </button>
+                <form action="" class="js-speaker-form form">
                     <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
-                    <label for="name" class="modal-lable">Имя</label>
-                    <input type="text" name="name" id="name" class="modal-input">
+                    <div class="form-field">
+                        <label for="name" class="modal-lable">Имя</label>
+                        <input type="text" name="name" id="name" class="modal-input">
+                    </div>
         
                     <label for="tel" class="modal-lable">Телефон</label>
                     <input type="tel" name="tel" id="tel" class="modal-input">
@@ -359,14 +361,17 @@
                     <label for="email" class="modal-lable">Почта</label>
                     <input type="email" name="email" id="email" class="modal-input">
 
-                    <label for="text" class="modal-lable"></label>Комментарий</label>
-                    <input type="text" name="text" id="text" placeholder="Введите текст" class="modal-input text">
-
-                   <input type="checkbox" name="checkbox" id="checkbox" class="modal-checkbox">
-                   <label for="checkbox" class="modal-lable">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>                 
+                    <label for="textarea" class="modal-lable">Комментарий</label>
+                    <textarea name="textarea" id="textarea"   placeholder="Введите текст" class="modal-input textarea"></textarea>
                     
-        
-                    <button type="submit">Оставить заявку </button>
+                  <div class="form-field-checkbox">
+                   <input type="checkbox" name="checkbox" id="checkbox" class="modal-checkbox">
+                   <label for="checkbox" class="modal-checkbox check">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>                 
+                  </div>    
+                       
+                   <div class="form-field-button">
+                    <button type="submit" class="modal-button">Отправить</button>
+                   </div>
                 </form>
             </div>
         </div>
