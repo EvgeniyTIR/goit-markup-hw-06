@@ -49,7 +49,21 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/*Скрытый заголовок/обьект*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*******----------*******/
 .list {
   padding: 0;
   margin: 0;
@@ -202,7 +216,6 @@ img {
 }
 
 .hero-button {
-  display: inline-flexbox;
   border: none;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -739,7 +752,6 @@ img {
 }
 .modal-input {
   width: 100%;
-  margin-bottom: 6px;
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -766,6 +778,8 @@ img {
   color: #757575;
   display: inline-block;
 
+  margin: 0;
+  padding: 0;
   margin-bottom: 4px;
 }
 .form {
@@ -775,6 +789,9 @@ img {
   margin-right: auto;
 }
 .form-field {
+  margin-bottom: 6px;
+}
+.form-position {
   position: relative;
 }
 .form-field-button {
@@ -789,8 +806,8 @@ img {
   align-items: center;
 }
 .modal-checkbox {
-  visibility: hidden;
 }
+
 .form-field-checkbox {
   display: flex;
   justify-content: center;
@@ -809,6 +826,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 }
 .modal-link {
   color: var(--accent-color);
@@ -816,10 +834,9 @@ img {
 .input-icon {
   position: absolute;
   display: inline-block;
-  top: 62%;
-  left: 0;
+  top: 50%;
+  left: 19px;
   transform: translateY(-50%);
-  margin-left: 19px;
 }
 .modal-input:hover + .input-icon,
 .modal-input:focus + .input-icon {
@@ -835,9 +852,9 @@ img {
   justify-content: center;
   position: absolute;
   top: 4px;
-  left: 9px;
+  left: 2px;
 
-  margin-right: 7px;
+  margin-right: 0;
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-title-text);
@@ -849,6 +866,9 @@ img {
 }
 .modal-checkbox:checked + .check > span {
   background-color: var(--accent-color);
+  border: none;
+}
+.modal-checkbox:focus + .check > span {
   border-color: var(--accent-color);
 }
 /*----------Footer Form-----------*/
