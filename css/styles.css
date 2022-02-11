@@ -804,6 +804,7 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   align-items: center;
+  cursor: pointer;
 }
 .modal-checkbox {
 }
@@ -841,10 +842,12 @@ img {
 .modal-input:hover + .input-icon,
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 .modal-input:hover,
 .modal-input:focus {
   border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 .check span {
   display: flex;
@@ -868,8 +871,10 @@ img {
   background-color: var(--accent-color);
   border: none;
 }
-.modal-checkbox:focus + .check > span {
+.modal-checkbox:focus + .check > span,
+.modal-checkbox:hover + .check > span {
   border-color: var(--accent-color);
+  cursor: pointer;
 }
 /*----------Footer Form-----------*/
 .footer-form {
